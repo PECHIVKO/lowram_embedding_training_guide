@@ -38,7 +38,7 @@
    
    Each of them seems to work, and you can experiment with them. You can continue training with lower learning rates to improve results. I got my first results after using the following scheme: 0.05:10, 0.02:20, 0.01:60, 0.005:200, 0.0005:500. I managed to get a recognizable face using the first saved checkpoint in the last training.
    
-7. Start training: You will have to adjust the learning rate and max steps after every training iteration to match the scheme. Remember to update the "Resume from saved training state" field in the "advanced configuration." You can start checking the created embeddings in automatic1111 after about 800-1000 steps to control overtraining. You will probably be able to get good enough results before you finish training. If needed, you can continue training with a low learning rate to improve results.
+7. Start training: You can monitor dedicatet gpu memory usage in task manager to make sure you did not exceded your vram limit. Make sure you do not use shared gpu memory because it will increase training time to weeks. You will have to adjust the learning rate and max steps after every training iteration to match the scheme. Remember to update the "Resume from saved training state" field in the "advanced configuration." You can start checking the created embeddings in automatic1111 after about 800-1000 steps to control overtraining. You will probably be able to get good enough results before you finish training. If needed, you can continue training with a low learning rate to improve results.
 
 
 You can also train lora using kohya_ss with this setup and get results faster if you already have reference images to train lora.

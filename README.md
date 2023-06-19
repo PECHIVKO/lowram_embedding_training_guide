@@ -38,9 +38,9 @@
    
    Each of them seems to work, and you can experiment with them. You can continue training with lower learning rates to improve results. I got my first results after using the following scheme: 0.05:10, 0.02:20, 0.01:60, 0.005:200, 0.0005:500. I managed to get a recognizable face using the first saved checkpoint in the last training.
    
-   7. Start training: You will have to adjust the learning rate and max steps after every training iteration to match the scheme. Remember to update the "Resume from saved training state" field in the "advanced configuration." You can start checking the created embeddings in automatic1111 after about 800-1000 steps to control overtraining. You will probably be able to get good enough results before you finish training. If needed, you can continue training with a low learning rate to improve results.
+7. Start training: You will have to adjust the learning rate and max steps after every training iteration to match the scheme. Remember to update the "Resume from saved training state" field in the "advanced configuration." You can start checking the created embeddings in automatic1111 after about 800-1000 steps to control overtraining. You will probably be able to get good enough results before you finish training. If needed, you can continue training with a low learning rate to improve results.
 
+
+You can also train lora using kohya_ss with this setup and get results faster if you already have reference images to train lora.
    
-   You can also train lora using kohya_ss with this setup and get results faster if you already have reference images to train lora.
-   
-   Please note that I am not an expert in this field and I am only beginning to delve into stable diffusion. The guide provided here is based on my research and understanding so far. I still have some questions on how to improve training speed/quality and if it is possible to use warmup to save some time on restarting training. So, I would be glad to hear any suggestions on that. I would also like to get some information about loss and how this value depends on training.
+Please note that I am not an expert in this field and I am only beginning to delve into stable diffusion. The guide provided here is based on my research and understanding so far. I still have some questions on how to improve training speed/quality and if it is possible to use warmup to save some time on restarting training. So, I would be glad to hear any suggestions on that. I would also like to get some information about loss and how this value depends on training.
